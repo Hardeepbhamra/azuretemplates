@@ -1,0 +1,37 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "hostingPlanNameSKU":{
+      "type": "string",
+      "defaultValue": "B3"
+    },
+    "hostingPlanNameSKUCapacity":{
+      "type": "int",
+      "defaultValue": 1
+    }
+  },
+  "variables": {
+    "comment": "Azure QuickStarts",
+    "hostingPlanName":"[parameters('hostingPlanName')]",
+    "apiVersion":"[parameters('2016-03-01')]",
+    "location":"[parameters('location')]"
+    
+  },
+  "resources": [
+    {
+      "type": "Microsoft.Web/serverfarms",
+      "name": "[parameters('hostingPlanName')]",
+      "apiVersion": "[variables('apiVersion')]",
+      "sku":{
+        "name":"[parameters('hostingPlanNameSKU')]",
+        "capacity":"[parameters('hostingPlanNameSKUCapacity')]"
+      },
+      "location":"[variables('location')]"
+
+    }
+    
+  ],
+  "outputs": {
+  }
+}

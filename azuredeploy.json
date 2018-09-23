@@ -1,0 +1,35 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "templateLinkBase":{
+      "type": "string",
+      "minLength": 1,
+      "defaultValue": "[uri(replace(json(string(deployment().properties.templateLink)).uri, ' ', '%20'), '.')]"
+    },
+    "templateLinkAccessToken":{
+      "type": "securestring",
+      "defaultValue": ""
+    }
+  },
+  "variables": {
+    "comment": "Azure QuickStarts",
+    "appServicePlanName":"[concat(parameters('webAppName'), '-asp-', uniquestring(resourceGroup().id)]"
+  },
+  "resources": [
+    {
+      "apiVersion": "[variables('apiVersion')]",
+      "name": "[concat(parameters('deploymentId'), '-Infrastructure')]",
+      "type": "Microsoft.Resources/deployments",
+      "properties": {
+        "mode":"Incremental",
+        "templateLink":{
+          "uri": "[concat(uri(parameters('templateLinkBase'), 'nested/infrastructure.json'), parameters('templateLinkAccessToken')]"
+        }
+      }
+    }
+    
+  ],
+  "outputs": {
+  }
+}
