@@ -38,7 +38,7 @@
       "properties": {
         "mode":"Incremental",
         "templateLink":{
-          "uri": "[concat(uri(parameters('templateLinkBase'), 'nested/infrastructure.json'), parameters('templateLinkAccessToken')]"
+          "uri": "[concat(uri(parameters('templateLinkBase'), 'nested/infrastructure.json'), parameters('templateLinkAccessToken'))]"
         }
       }
     }
