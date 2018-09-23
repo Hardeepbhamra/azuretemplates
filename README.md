@@ -1,0 +1,2 @@
+# azuretemplates
+Azure Json Templates
