@@ -14,6 +14,15 @@
     "deploymentId": {
       "type": "string",
       "defaultValue": "[resourceGroup().name]"
+    },
+    "webAppName": {
+      
+    },
+    "hostingPlanName": {
+      
+    },
+    "location": {
+      
     }
   },
   "variables": {
