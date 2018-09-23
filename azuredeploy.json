@@ -23,7 +23,7 @@
   "resources": [
     {
       "apiVersion": "[variables('apiVersion')]",
-      "name": "[concat(parameters('deploymentId'), '-Infrastructure')]",
+      "name": "[concat(parameters('deploymentId'), '-Infrastructuree')]",
       "type": "Microsoft.Resources/deployments",
       "properties": {
         "mode":"Incremental",
