@@ -16,18 +16,19 @@
       "defaultValue": "[resourceGroup().name]"
     },
     "webAppName": {
-      
+      "type": "string"
     },
     "hostingPlanName": {
-      
+      "type": "string"
     },
     "location": {
-      
+      "type": "string"
     }
   },
   "variables": {
     "comment": "Azure QuickStarts",
-    "appServicePlanName":"[concat(parameters('webAppName'), '-asp-', uniquestring(resourceGroup().id))]"
+    "appServicePlanName": "[concat(parameters('webAppName'), '-asp-', uniquestring(resourceGroup().id))]",
+    "apiVersion": "2016-03-01"
   },
   "resources": [
     {

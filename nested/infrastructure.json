@@ -6,15 +6,24 @@
       "type": "string",
       "defaultValue": "B3"
     },
-    "hostingPlanNameSKUCapacity":{
+    "hostingPlanNameSKUCapacity": {
       "type": "int",
       "defaultValue": 1
+    },
+    "location": {
+      "type": "string"
+    },
+    "hostingPlanName": {
+      "type": "string"
+    },
+    "apiVersion": {
+      "type": "string"
     }
   },
   "variables": {
     "comment": "Azure QuickStarts",
     "hostingPlanName":"[parameters('hostingPlanName')]",
-    "apiVersion":"[parameters('2016-03-01')]",
+    "apiVersion":"[parameters('apiVersion')]",
     "location":"[parameters('location')]"
     
   },
