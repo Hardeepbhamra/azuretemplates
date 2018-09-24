@@ -19,10 +19,12 @@
       "type": "string"
     },
     "hostingPlanName": {
-      "type": "string"
+      "type": "string",
+      "defaultValue": "TestASP01"
     },
     "location":{
-      "type": "string"
+      "type": "string",
+      "defaultValue": "EastUS"
     }
   },
   "variables": {
