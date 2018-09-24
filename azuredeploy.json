@@ -15,9 +15,6 @@
       "type": "string",
       "defaultValue": "[resourceGroup().name]"
     },
-    "webAppName": {
-      "type": "string"
-    },
     "hostingPlanName": {
       "type": "string",
       "defaultValue": "TestASP01"
