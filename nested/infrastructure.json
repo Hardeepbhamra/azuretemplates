@@ -19,7 +19,7 @@
       "defaultValue": "TestASP01"
     },
     "apiVersion": {
-      "type": "string",
+      "type": "int",
       "defaultValue": "2018-08-01"
     }
   },
