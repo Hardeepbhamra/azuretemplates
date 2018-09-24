@@ -7,6 +7,9 @@
     },
     "hostingPlanName":{
       "value": "TestASP01"
+    },
+    "location":{
+      "value": "eastus"
     }
   }
 }
