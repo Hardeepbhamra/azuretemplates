@@ -20,6 +20,9 @@
     },
     "hostingPlanName": {
       "type": "string"
+    },
+    "location":{
+      "type": "string"
     }
   },
   "variables": {
