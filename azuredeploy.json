@@ -27,7 +27,7 @@
   "variables": {
     "comment": "Azure QuickStarts",
     "appServicePlanName": "[concat(parameters('hostingPlanName'), '-asp-', uniquestring(resourceGroup().id))]",
-    "apiVersion": "2018-08-01",
+    "apiVersion": "2018-02-01",
     "location":"[parameters('location')]"
   },
   "resources": [
