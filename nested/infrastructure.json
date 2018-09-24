@@ -30,7 +30,7 @@
   "resources": [
     {
       "type": "Microsoft.Web/serverfarms",
-      "name": "[parameters('hostingPlanName')]",
+      "name": "[variables('hostingPlanName')]",
       "apiVersion": "[variables('apiVersion')]",
       "sku":{
         "name":"[parameters('hostingPlanNameSKU')]",
