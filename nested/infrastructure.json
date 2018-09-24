@@ -17,16 +17,12 @@
     "hostingPlanName": {
       "type": "string",
       "defaultValue": "TestASP01"
-    },
-    "apiVersion": {
-      "type": "int",
-      "defaultValue": "2018-08-01"
     }
   },
   "variables": {
     "comment": "Azure QuickStarts",
     "hostingPlanName":"[parameters('hostingPlanName')]",
-    "apiVersion":"[parameters('apiVersion')]",
+    "apiVersion":"2018-08-01",
     "location":"[parameters('location')]"
     
   },
