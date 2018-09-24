@@ -21,7 +21,7 @@
     },
     "location":{
       "type": "string",
-      "defaultValue": "EastUS"
+      "defaultValue": "EastUS2"
     }
   },
   "variables": {
